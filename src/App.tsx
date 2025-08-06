@@ -1,7 +1,10 @@
-import './App.css';
+import { Header } from './components/Header'
 
-function App() {
-  return <></>;
+export function App() {
+    return (
+        <div>
+            <Header props='teste'>Olá Mundo</Header>
+        </div>
+    )
+
 }
-
-export default App;
