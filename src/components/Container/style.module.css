@@ -1,0 +1,12 @@
+.container-fluid{ /* aqui usamos quando queremos que o nosso header tenha um tamanho maior que o nosso container assim ele ficara com um backgroud pelo site todo*/
+    max-width: auto;
+}
+
+.container{
+    max-width: 98rem;
+    margin: 0 auto;
+}
+.content{
+    padding: 3.2rem;
+
+}

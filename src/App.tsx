@@ -1,10 +1,17 @@
-import { Header } from './components/Header'
+import { Container } from './components/Container'
+import { Logo } from './components/LOGO'
+
+import './styles/theme.css'
+import './styles/global.css'
+
 
 export function App() {
     return (
-        <div>
-            <Header props='teste'>Olá Mundo</Header>
-        </div>
-    )
+        <>
+            <Container>
+                <Logo />
+            </Container>
+
+        </>)
 
 }
