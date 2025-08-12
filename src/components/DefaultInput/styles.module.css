@@ -1,0 +1,13 @@
+.input{
+    text-align: center;
+    padding: .8rem 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--primary);
+    color: white;
+}
+
+.input:active{
+    outline: 1px solid var(--primary);
+}
+
