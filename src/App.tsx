@@ -4,9 +4,11 @@ import { Menu } from './components/Menu'
 import { CountDown } from './components/CountDown'
 import { PlayIcon } from 'lucide-react'
 import { DefaultInput } from './components/DefaultInput'
+import { Cycles } from './components/Cycles'
 
 import './styles/theme.css'
 import './styles/global.css'
+import { DefaulButton } from './components/DefaultButton'
 
 
 export function App() {
@@ -24,17 +26,16 @@ export function App() {
             <Container>
                 <form className='form' action="">
                     <div className="formRow">
-                        <DefaultInput type='text' label='task:' id='textInput' placeholder='Ex: estudar para a' />
+                        <DefaultInput type='text' labelText='task:' id='textInput' placeholder='Ex: Estudar css' />
                     </div>
                     <div className="formRow">
                         <p>Foque nesse ciclo por 25 minutos</p>
                     </div>
                     <div className="formRow">
-                        <p>Circlos:</p>
-                        <p>0 0 0 0 0 </p>
+                        <Cycles />
                     </div>
                     <div className="formRow">
-                        <button><PlayIcon /></button>
+                        <DefaulButton icon={<PlayIcon />} />
                     </div>
                 </form>
             </Container>

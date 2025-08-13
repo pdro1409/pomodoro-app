@@ -2,17 +2,16 @@ import styles from './styles.module.css'
 
 type DefaultInputProps = {
     type: 'text' | 'number'
-    label: string
-
+    labelText: string
 } & React.ComponentProps<'input'>
 
 
-export function DefaultInput({ type, label, id, placeholder }: DefaultInputProps) {
+export function DefaultInput({ type, labelText, id, ...rest }: DefaultInputProps) {
     return (
         <>
-            {label ? <label htmlFor={id}>{label}</label> : ''}
+            <label htmlFor={id}>{labelText}</label>
 
-            <input type={type} name="" id={id} className={styles.input} placeholder={placeholder} />
+            <input type={type} id={id} className={styles.input} {...rest} />
         </>
     )
 }
