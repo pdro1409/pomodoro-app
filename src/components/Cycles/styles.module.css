@@ -7,6 +7,10 @@
     margin-top: 1.6rem;
 }
 
+.cycles span{
+    color: var(--text-default);
+}
+
 .cyclesDots{
     display: flex;
     gap: .8rem

@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     background: var(--primary);
-    color: var(--text-over-primary);
+    color: var(--text-default);
     padding: 1.2rem;
     border-radius: .8rem;
 }

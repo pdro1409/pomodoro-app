@@ -25,3 +25,6 @@
    border-bottom: 2px solid var(--disabled);
    color: var(--text-muted);
 }
+.label{
+color: var(--text-default);
+}
