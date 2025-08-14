@@ -2,7 +2,7 @@ import { Container } from './components/Container'
 import { Logo } from './components/Logo'
 import { Menu } from './components/Menu'
 import { CountDown } from './components/CountDown'
-import { PlayIcon } from 'lucide-react'
+import { PlayCircleIcon } from 'lucide-react'
 import { DefaultInput } from './components/DefaultInput'
 import { Cycles } from './components/Cycles'
 
@@ -35,7 +35,7 @@ export function App() {
                         <Cycles />
                     </div>
                     <div className="formRow">
-                        <DefaulButton icon={<PlayIcon />} />
+                        <DefaulButton icon={<PlayCircleIcon />} />
                     </div>
                 </form>
             </Container>
