@@ -1,49 +1,11 @@
-import { Container } from './components/Container'
-import { Logo } from './components/Logo'
-import { Menu } from './components/Menu'
-import { CountDown } from './components/CountDown'
-import { PlayCircleIcon } from 'lucide-react'
-import { DefaultInput } from './components/DefaultInput'
-import { Cycles } from './components/Cycles'
-import { DefaulButton } from './components/DefaultButton'
-import { Footer } from './components/Footer'
+import { Home } from './pages/Home'
+
 
 import './styles/theme.css'
 import './styles/global.css'
 
 
 export function App() {
-    return (
-        <>
-            <Container>
-                <Logo />
-            </Container>
-            <Container>
-                <Menu />
-            </Container>
-            <Container>
-                <CountDown />
-            </Container>
-            <Container>
-                <form className='form' action="">
-                    <div className="formRow">
-                        <DefaultInput type='text' labelText='task:' id='textInput' placeholder='Ex: Estudar css' />
-                    </div>
-                    <div className="formRow">
-                        <>Foque nesse ciclo por 25 minutos</>
-                    </div>
-                    <div className="formRow">
-                        <Cycles />
-                    </div>
-                    <div className="formRow">
-                        <DefaulButton icon={<PlayCircleIcon />} />
-                    </div>
-                </form>
-            </Container>
-            <Container>
-                <Footer />
-            </Container>
-
-        </>)
+    return <Home />
 
 }
